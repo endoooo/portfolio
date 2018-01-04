@@ -1,3 +1,18 @@
-h1 {
-    font-size: 40px;
+:root {
+    --primary: #1B1FDD;
+    --secondary: #23FFC6;
+    --gray-lighter: #eaeaea;
+
+    --font-family-main: 'Source Sans Pro', sans-serif;
+    --font-family-support: 'Source Code Pro', monospace;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
 }

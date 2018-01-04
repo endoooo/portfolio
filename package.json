@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "NODE_ENV=production gulp build",
-    "start": "NODE_ENV=development gulp"
+    "build": "rm -rf dist && NODE_ENV=production gulp build",
+    "start": "rm -rf dist && NODE_ENV=development gulp"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.4",
@@ -23,5 +23,9 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "4.0.0-beta.3",
+    "normalize.css": "^7.0.0"
+  }
 }

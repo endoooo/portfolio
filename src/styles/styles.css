@@ -1,5 +1,10 @@
+@import 'normalize.css';
+@import 'bootstrap-grid.css';
 @import 'base.css';
 
-p {
-    font-size: 40px;
-}
+/* layout */
+@import 'layout/header.css';
+@import 'layout/footer.css';
+
+/* pages */
+@import 'pages/home.css';

@@ -1,0 +1,14 @@
+.home-hero {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 96px);
+    min-height: 80vh;
+    padding-top: 56px;
+    background: var(--primary);
+}
+
+.home-hero__text {
+    font-size: 32px;
+    line-height: 48px;
+    color: white;
+}

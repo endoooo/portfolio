@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 56px;
+    padding: 16px;
+    background: var(--primary);
+}
+
+.header__title {
+    margin: 0;
+}
+
+.header__title-img {
+    width: 24px;
+    height: 24px;
+}
+
+.header__button {
+    border: 0;
+    font-family: var(--font-family-support);
+    font-size: 16px;
+    color: white;
+    background: transparent;
+}

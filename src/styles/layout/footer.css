@@ -1,0 +1,16 @@
+.footer {
+    --border-bottom-width: 16px;
+
+    padding-bottom: calc(80px + var(--border-bottom-width));
+    margin-top: 160px;
+    border-bottom: var(--border-bottom-width) solid var(--primary);
+}
+
+.footer::before {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 8px;
+    margin: 0 auto 152px;
+    background-color: var(--gray-lighter);
+}
