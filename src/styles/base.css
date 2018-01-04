@@ -1,6 +1,8 @@
 :root {
     --primary: #1B1FDD;
     --secondary: #23FFC6;
+
+    --gray-dark: #404040;
     --gray-lighter: #eaeaea;
 
     --font-family-main: 'Source Sans Pro', sans-serif;
@@ -14,5 +16,9 @@
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--font-family-main);
+}
+
+a, button {
+    font-family: var(--font-family-support);
 }

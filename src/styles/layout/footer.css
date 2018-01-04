@@ -1,8 +1,8 @@
 .footer {
     --border-bottom-width: 16px;
 
-    padding-bottom: calc(80px + var(--border-bottom-width));
-    margin-top: 160px;
+    padding-bottom: calc(40px + var(--border-bottom-width));
+    margin-top: 64px;
     border-bottom: var(--border-bottom-width) solid var(--primary);
 }
 
@@ -11,6 +11,144 @@
     display: block;
     width: 80px;
     height: 8px;
-    margin: 0 auto 152px;
+    margin: 0 auto 56px;
     background-color: var(--gray-lighter);
+}
+
+@media (min-width: 768px) {
+    .footer {
+        padding-bottom: calc(80px + var(--border-bottom-width));
+        margin-top: 160px;
+    }
+
+    .footer::before {
+        margin-bottom: 152px;
+    }
+}
+
+/* footer-nav */
+
+.footer-nav__list {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-nav__list-item {
+    display: block;
+}
+
+.footer-nav__list-item + .footer-nav__list-item {
+    margin-top: 24px;
+}
+
+.footer-nav__list-item-link {
+    --border-width: 2px;
+
+    display: block;
+    padding: 8px;
+    border-left-width: var(--border-width);
+    border-left-style: solid;
+    border-color: var(--gray-lighter);
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.footer-nav__list-item-link:hover,
+.footer-nav__list-item-link--active {
+    border-color: var(--secondary);
+}
+
+@media (min-width: 768px) {
+    .footer-nav__list {
+        display: flex;
+    }
+
+    .footer-nav__list-item {
+        flex: 1;
+    }
+
+    .footer-nav__list-item + .footer-nav__list-item {
+        margin-top: 0;
+        margin-left: 40px;
+    }
+
+    .footer-nav__list-item-link {
+        padding-bottom: calc(16px - var(--border-width));
+        border-left: none;
+        border-bottom-width: var(--border-width);
+        border-bottom-style: solid;
+        text-align: center;
+    }
+}
+
+/* footer contact */
+
+.footer-contact {
+    margin: 80px auto;
+}
+
+.footer-contact__hi {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--gray-dark);
+}
+
+.footer-contact__email {
+    margin: 8px auto;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--primary);
+}
+
+.footer-contact__copy-btn {
+    padding: 16px 24px;
+    border: 1px solid var(--secondary);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--gray-dark);
+    background: transparent;
+}
+
+.footer-contact__copy-btn:hover {
+    background: var(--secondary);
+}
+
+@media (min-width: 768px) {
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-contact__hi {
+        font-size: 20px;
+        line-height: 32px;
+        color: var(--gray-dark);
+    }
+
+    .footer-contact__email {
+        font-size: 32px;
+        line-height: 48px;
+    }
+}
+
+/* footer social media */
+
+.footer-social-media__link {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.footer-social-media__link + .footer-social-media__link {
+    margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+    .footer-social-media__link {
+        text-align: center;
+    }
 }
