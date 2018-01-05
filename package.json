@@ -1,31 +1,25 @@
 {
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
+  "version": "1.0.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "gatsby": "^1.9.145",
+    "gatsby-link": "^1.6.32",
+    "gatsby-plugin-react-helmet": "^1.0.8"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
   "scripts": {
-    "build": "rm -rf dist && NODE_ENV=production gulp build",
-    "start": "rm -rf dist && NODE_ENV=development gulp"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "autoprefixer": "^7.2.4",
-    "babel-core": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "browser-sync": "^2.23.2",
-    "cssnano": "^3.10.0",
-    "eslint": "^4.9.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.7.0",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^7.0.0",
-    "gulp-postcss": "^7.0.1",
-    "gulp-sourcemaps": "^2.6.3",
-    "postcss-calc": "^6.0.1",
-    "postcss-custom-properties": "^6.2.0",
-    "postcss-import": "^11.0.0"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ],
-  "dependencies": {
-    "bootstrap": "4.0.0-beta.3",
-    "normalize.css": "^7.0.0"
+    "prettier": "^1.9.2"
   }
 }
