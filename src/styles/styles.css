@@ -5,6 +5,7 @@
 /* layout */
 @import 'layout/header.css';
 @import 'layout/footer.css';
+@import 'layout/menu.css';
 
 /* pages */
 @import 'pages/home.css';

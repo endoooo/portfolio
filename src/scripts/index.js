@@ -1,3 +1,11 @@
-const hello = () => 'hello';
+const bodyEl = document.body;
+const menuOpenButtonEl = document.getElementById('menu-open-button');
+const menuCloseButtonEl = document.getElementById('menu-close-button');
 
-console.log(hello); 
+const toggleMenu = (e) => {
+  e.preventDefault();
+  bodyEl.classList.toggle('has-menu-active');
+};
+
+menuOpenButtonEl.addEventListener('click', toggleMenu);
+menuCloseButtonEl.addEventListener('click', toggleMenu);

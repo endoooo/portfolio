@@ -15,25 +15,31 @@
                 <img src="images/eric-endo-logo-white.svg" alt="Eric Endo" class="header__title-img">
             </a>
         </h1>
-        <button class="header__button">Explore</button>
+        <button id="menu-open-button" class="header__button">Explore</button>
     </header>
-    <div class="home-hero">
+    <section class="home-hero">
         <div class="container">
             <p class="home-hero__text">
-                Olá! Meu nome é Eric Endo,<br>
-                designer e desenvolvedor front-end
+                <span class="home-hero__text-line">Olá! Meu nome é Eric Endo,</span>
+                <span class="home-hero__text-line">designer e desenvolvedor front end</span>
             </p>
         </div>
-    </div>
+    </section>
     <div class="container">
-        <div>
-            <p>Atualmente, estou buscando entender como contribuir da melhor forma para tornar o mundo um lugar melhor.</p>
-            <a href="/2018">endo@2018</a>
-        </div>
-        <div>
-            <p>Nos últimos anos, tenho trabalhado com UX, design e desenvolvimento front-end na WeFit, acelerando projetos de empresas como Autopass, Azul, Luft, Repom entre outras.</p>
-            <a href="/profissional">profissional</a>
-        </div>
+        <section class="home-section home-section--first">
+            <div class="home-section__p5"></div>
+            <div class="home-section__content home-section__content--first">
+                <p class="home-section__content-text">Atualmente, estou buscando formas de contribuir com iniciativas de impacto social.</p>
+                <a class="home-section__content-link" href="/2018">veja minhas metas p/ 2018</a>
+            </div>
+        </section>
+        <section class="home-section">
+            <div class="home-section__p5 home-section__p5--first"></div>
+            <div class="home-section__content">
+                <p class="home-section__content-text">Nos últimos anos, tenho ajudado a melhorar os negócios de empresas como Autopass, Azul, Luft e Repom através de tecnologia e experiência do usuário.</p>
+                <a class="home-section__content-link" href="/profissional">saiba como</a>
+            </div>
+        </section>
     </div>
     <footer class="footer">
         <div class="container">
@@ -64,5 +70,32 @@
             </div>
         </div>
     </footer>
+
+    <div class="menu">
+        <header class="menu-header container-fluid">
+            <h1 class="menu-header__title">
+                <img src="images/eric-endo-logo-white.svg" alt="Eric Endo" class="menu-header__title-img">
+            </h1>
+            <button id="menu-close-button" class="menu-header__button">Fechar</button>
+        </header>
+        <nav class="menu-nav container">
+            <ul class="menu-nav__list">
+                <li class="menu-nav__list-item">
+                    <a href="/" class="menu-nav__list-item-link menu-nav__list-item-link--active">olá!</a>
+                </li>
+                <li class="menu-nav__list-item">
+                    <a href="/2018" class="menu-nav__list-item-link">endo@2018</a>
+                </li>
+                <li class="menu-nav__list-item">
+                    <a href="/profissional" class="menu-nav__list-item-link">profissional</a>
+                </li>
+                <li class="menu-nav__list-item">
+                    <a href="/sobre" class="menu-nav__list-item-link">sobre</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script type="text/javascript" src="scripts/index.js"></script>
 </body>
 </html>
