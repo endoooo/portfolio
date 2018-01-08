@@ -4,14 +4,14 @@
 }
 
 .menu {
-    display: none;
+    /* display: none; */
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 20;
-    background: var(--primary);
+    background: #1B1FDD;
 }
 
 .has-menu-active .menu {
@@ -70,10 +70,10 @@
 }
 
 .menu-nav__list-item-link--active {
-    color: var(--primary);
-    background: var(--secondary);
+    color: #1B1FDD;
+    background: #23FFC6;
 }
 
 .menu-nav__list-item-link:not(.menu-nav__list-item-link--active):hover {
-    color: var(--secondary);
+    color: #23FFC6;
 }

@@ -1,3 +1,0 @@
-# endoooo's 2018 portfolio
-
-soon...

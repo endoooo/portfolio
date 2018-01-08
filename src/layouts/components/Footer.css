@@ -1,9 +1,9 @@
-.footer {
-    --border-bottom-width: 16px;
+/* --border-bottom-width: 16px; */
 
-    padding-bottom: calc(40px + var(--border-bottom-width));
+.footer {
+    padding-bottom: calc(40px + 16px);
     margin-top: 64px;
-    border-bottom: var(--border-bottom-width) solid var(--primary);
+    border-bottom: 16px solid #1B1FDD;
 }
 
 .footer::before {
@@ -12,12 +12,12 @@
     width: 80px;
     height: 8px;
     margin: 0 auto 56px;
-    background-color: var(--gray-lighter);
+    background-color: #eaeaea;
 }
 
 @media (min-width: 768px) {
     .footer {
-        padding-bottom: calc(80px + var(--border-bottom-width));
+        padding-bottom: calc(80px + 16px);
         margin-top: 160px;
     }
 
@@ -41,23 +41,25 @@
     margin-top: 24px;
 }
 
+/* --border-width: 2px; */
+
 .footer-nav__list-item-link {
-    --border-width: 2px;
+    
 
     display: block;
     padding: 8px;
-    border-left-width: var(--border-width);
+    border-left-width: 2px;
     border-left-style: solid;
-    border-color: var(--gray-lighter);
+    border-color: #eaeaea;
     font-size: 16px;
     line-height: 20px;
     text-decoration: none;
-    color: var(--primary);
+    color: #1B1FDD;
 }
 
 .footer-nav__list-item-link:hover,
 .footer-nav__list-item-link--active {
-    border-color: var(--secondary);
+    border-color: #23FFC6;
 }
 
 @media (min-width: 768px) {
@@ -75,9 +77,9 @@
     }
 
     .footer-nav__list-item-link {
-        padding-bottom: calc(16px - var(--border-width));
+        padding-bottom: calc(16px - 2px);
         border-left: none;
-        border-bottom-width: var(--border-width);
+        border-bottom-width: 2px;
         border-bottom-style: solid;
         text-align: center;
     }
@@ -92,28 +94,28 @@
 .footer-contact__hi {
     font-size: 16px;
     line-height: 20px;
-    color: var(--gray-dark);
+    color: #404040;
 }
 
 .footer-contact__email {
     margin: 8px auto;
     font-size: 24px;
     line-height: 32px;
-    color: var(--primary);
+    color: #1B1FDD;
 }
 
 .footer-contact__copy-btn {
     padding: 16px 24px;
-    border: 1px solid var(--secondary);
+    border: 1px solid #23FFC6;
     border-radius: 4px;
     font-size: 16px;
     line-height: 20px;
-    color: var(--gray-dark);
+    color: #404040;
     background: transparent;
 }
 
 .footer-contact__copy-btn:hover {
-    background: var(--secondary);
+    background: #23FFC6;
 }
 
 @media (min-width: 768px) {
@@ -124,7 +126,7 @@
     .footer-contact__hi {
         font-size: 20px;
         line-height: 32px;
-        color: var(--gray-dark);
+        color: #404040;
     }
 
     .footer-contact__email {
@@ -140,7 +142,7 @@
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
-    color: var(--primary);
+    color: #1B1FDD;
 }
 
 .footer-social-media__link + .footer-social-media__link {
